@@ -511,8 +511,7 @@ function calc() {
     plancherBanner.style.display = 'flex';
     document.getElementById('plancherText').innerHTML =
       `<span><strong>Application de la cotisation plancher</strong><br>` +
-      `À compter du 1er janvier 2027, le Conseil d'administration de PRAGA a instauré une cotisation plancher pour les agents en activité, afin de garantir un montant minimal de cotisation. ` +
-      `Ce plancher correspond au montant moyen des dépenses de santé du collège des actifs constaté au titre de l'année ${plancher.anneeReference}, soit <strong>${fmt(plancher.montant)}</strong> pour ${annee}. Il est révisé chaque année.<br>` +
+      `Conformément aux dispositions contractuelles, une cotisation plancher de <strong>${fmt(plancher.montant)}</strong> s'applique aux agents en activité pour ${annee}.<br>` +
       `Calculée sur vos commissions et rémunérations brutes (${fmt(assiette)}), votre cotisation s'élèverait à ${fmt(totalAnnuel)}. ` +
       `Ce montant étant inférieur au plancher, c'est le forfait de <strong>${fmt(plancher.montant)}</strong> qui est appelé pour l'ensemble des trois contrats.</span>`;
     totalTag.textContent = 'Cotisation plancher — forfait global des 3 contrats';
